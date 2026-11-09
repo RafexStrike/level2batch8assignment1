@@ -10,9 +10,9 @@ The repository also includes two blog posts exploring important TypeScript conce
 
 - [`solutions.ts`](./solutions.ts) — Solutions to the eight coding problems.
 - [`type-vs-interface.md`](./type-vs-interface.md) — Explains the differences between TypeScript type aliases and interfaces, and when to use each.
-- [`type-narrowing.md`](./type-narrowing.md) — Explains the `any`, `unknown`, and `never` types in TypeScript.
+- [`any-unknown-never.md`](./any-unknown-never.md) — Explains the `any`, `unknown`, and `never` types in TypeScript.
 
 ## Blog Posts
 
 1. [Type Alias vs Interface in TypeScript](./type-vs-interface.md)
-2. [any, unknown, and never in TypeScript](./type-narrowing.md)
+2. [any, unknown, and never in TypeScript](./any-unknown-never.md)

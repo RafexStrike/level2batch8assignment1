@@ -1,6 +1,6 @@
 # any, unknown, and never in TypeScript
 
-When working with TypeScript, we will see special types: any, unknown, and never. They look similar, but they behave quite differently. But there are differences.
+When working with TypeScript, we come across special types: `any`, `unknown`, and `never`. They may look similar, but they behave quite differently.
 
 Let's start with any.
 
@@ -21,7 +21,7 @@ Now comes unknown.
 
 ## What is unknown?
 
-unknown is similar to any because it can hold any type of value. But there is a difference: TypeScript doesn't allow us to perform operations on it without checking i type first.
+unknown is similar to any because it can hold any type of value. But there is a difference: TypeScript doesn't allow us to perform operations on it without checking its type first.
 
 ```
 let value: unknown = "Hello";
@@ -31,11 +31,11 @@ if (typeof value === "string") {
 }
 ```
 
-So, unlike any, unknown forces us to check the type before using the value. That's why unknown is always preferred over any.
+So, unlike any, unknown forces us to check the type before using the value. That's why unknown is generally preferred over any.
 
 ## What is never?
 
-Now comes the third one, never. It represen a value that should never exist. For example, a function that always throws an error or never finishes execution.
+Now comes the third one: never. It represents a value that should never exist. For example, a function that always throws an error or never finishes execution.
 
 ```
 function throwError(): never {
