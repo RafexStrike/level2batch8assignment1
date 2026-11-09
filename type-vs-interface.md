@@ -4,7 +4,7 @@ When working with TypeScript, sometimes we need to describe the shape of an obje
 
 Let's start with an interface:
 
-``` 
+```
 interface User {
   name: string;
   age: number;
@@ -13,7 +13,7 @@ interface User {
 
 We can write the same thing using a type alias:
 
-``` 
+```
 type User = {
   name: string;
   age: number;
@@ -22,9 +22,9 @@ type User = {
 
 Both describe the same object shape. But there are differences.
 
-The first difference is that an interface can be extended, and it also suppor  declaration merging. This means we can declare the same interface more than once, and TypeScript will combine their properties.
+The first difference is that an interface can be extended, and it also suppor declaration merging. This means we can declare the same interface more than once, and TypeScript will combine their properties.
 
-``` 
+```
 interface User {
   name: string;
 }
@@ -48,3 +48,7 @@ We can also combine object types using intersections with &, while interfaces ca
 ## When should we use which one?
 
 For defining object shapes, We would generally use interface, specially when the type may need to be extended. But when working with unions, intersections, or other more complex type combinations, `type` is the better choice.
+
+## Conclusion
+
+So, both type aliases and interfaces can be used to describe object shapes. But they have some differences. We can use interface for defining object shapes, while type is more useful when working with different kinds of type combinations.

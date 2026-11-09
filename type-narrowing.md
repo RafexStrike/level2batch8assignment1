@@ -21,7 +21,7 @@ Now comes unknown.
 
 ## What is unknown?
 
-unknown is similar to any because it can hold any type of value. But there is a difference: TypeScript doesn't allow us to perform operations on it without checking i  type first.
+unknown is similar to any because it can hold any type of value. But there is a difference: TypeScript doesn't allow us to perform operations on it without checking i type first.
 
 ```
 let value: unknown = "Hello";
@@ -35,10 +35,14 @@ So, unlike any, unknown forces us to check the type before using the value. That
 
 ## What is never?
 
-Now comes the third one, never. It represen  a value that should never exist. For example, a function that always throws an error or never finishes execution.
+Now comes the third one, never. It represen a value that should never exist. For example, a function that always throws an error or never finishes execution.
 
 ```
 function throwError(): never {
   throw new Error("Something went wrong");
 }
 ```
+
+## Conclusion
+
+So, any allows us to skip type checking, unknown forces us to check the type before using it, and never represents something that should never occur. Understanding these differences helps us write safer code in TypeScript.
